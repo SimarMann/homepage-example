@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="480px" height="480px" viewBox="0 0 480 480" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L480 0L480 480L0 480L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="icons8-menu">
+    <path d="M0 0L480 0L480 480L0 480L0 0Z" id="Background" fill="#FFFFFF" fill-opacity="0" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <g id="Group" transform="translate(48 128)">
+        <path d="M0 112L384 112" id="Line" fill="none" fill-rule="evenodd" stroke="#F3F9F0" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M0 0L384 0" id="Line" fill="none" fill-rule="evenodd" stroke="#F3F9F0" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M0 224L384 224" id="Line" fill="none" fill-rule="evenodd" stroke="#F3F9F0" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+    </g>
+  </g>
+</svg>

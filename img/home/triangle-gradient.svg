@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 1920 270" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="0" y1="270" x2="1920" y2="0" id="gradient_1">
+      <stop offset="0%" stop-color="#FFECCC" />
+      <stop offset="100%" stop-color="#D0F0E4" />
+    </linearGradient>
+  </defs>
+  <path d="M-0.0033 270L1920 0L1920 270L-0.0033 270L-0.0033 270Z" id="Rectangle-2" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+</svg>

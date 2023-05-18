@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: calc(15px + 0.390625vw);
+}
+/* Position & Sizing: index.html */
+body {
+    background-color: #FFECCC;
+    color: #ff8b5c;
+}
+.home-color {
+    color: #ff8b5c;
+}
+.grid-container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 20% 55% 25%;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-areas: "header header header header" "main main aside aside" "footer footer footer footer";
+}
+.home-header {
+    grid-area: header;
+}
+.home-main {
+    grid-area: main;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.home-aside {
+    height: 100%;
+    grid-area: aside;
+}
+.home-footer {
+    grid-area: footer;
+    background-image: url("../img/home/triangle-gradient.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+}
+.navbar-brand {
+    width: 10vw;
+    text-align: center;
+}
+.logo {
+    width: 3.5rem;
+    height: auto;
+}
+.logo:hover {
+    width: 3.75rem
+}
+.navbar .navbar-toggler {
+    z-index: 1;
+}
+.navbar-toggler:focus {
+    outline: none;
+}
+.open-icon {
+    background-image: url("../img/home/menu.svg");
+}
+.close-icon {
+    background-image: url("../img/home/close.svg");
+}
+.navbar-collapse {
+    flex-grow: 0;
+}
+.nav-item {
+    padding: 0rem 0.5rem;
+}
+.home-border:not(:last-child) {
+    border-right: 0.01rem solid #ff8b5c;
+}
+.nav-link {
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center;
+    padding: 0rem 2rem 0rem 2rem;
+}
+.nav-link:hover {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+.active .nav-link {
+    font-weight: 500;
+}
+.heading {
+    font-family: Poppins;
+    font-weight: 400;
+    letter-spacing: 0.0625rem;
+}
+.heading-size {
+    font-size: 5rem;
+    vertical-align: center;
+}
+.social-list {
+    width: 20vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    list-style-type: none;
+}
+.social-link {
+    width: 3rem;
+    height: auto;
+}
+.social-link:hover {
+    width: 4rem;
+}
+.study-art {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom center;
+}
+/* Position & Sizing: tech.html econ.html neuropsy.html intrel.html */
+.alt-body {
+    height: 200vh;
+    font-family: Poppins;
+}
+.grid-container-alt {
+    height: 200vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 10% 45% 45%;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-areas: "header header header header" "main main main main" "section section section section";
+}
+.alt-header {
+    grid-area: header;
+    width: 100%
+}
+.alt-main {
+    grid-area: main;
+    display: flex;
+    width:100%
+}
+.alt-section {
+    grid-area: section;
+    display: flex;
+}
+.heading-div {
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 5rem;
+}
+.text-div {
+    width: 50%;
+}
+.heading-size-alt {
+    font-size: 3.5rem;
+}
+.small-graphic {
+    width: 47%;
+    object-fit: cover;
+    object-position: center center;
+}
+.large-graphic {
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom center;
+}
+.description {
+    width: 90%;
+    height: 30%;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    text-align: center;
+    margin: 0rem 0rem 0rem 0rem;
+}
+.subtopic {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.subtopic-card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 69%;
+    width: 84%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.subtopic-description {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    width: 90%;
+    height: 50%;
+}
+.subtopic-heading {
+    font-size: 1.5rem;
+}
+.subtopic-icon {
+    width: 5rem;
+    height: auto;
+}
+/* tech.html Styling */
+.tech-bg {
+    background-color: #C628D7;
+    color: #F3F9F0;
+}
+.tech-color {
+    color: #F3F9F0;
+}
+.tech-border:not(:last-child) {
+    border-right: 0.01rem solid #F3F9F0;
+}
+.tech-card {
+    background-image: url("../img/tech/card-gradient.svg");
+}
+/* econ.html Styling */
+.econ-bg {
+    background-color: #FECE2F;
+    color: #1A1A1A;
+}
+.econ-color {
+    color: #1A1A1A;
+}
+.econ-border:not(:last-child) {
+    border-right: 0.01rem solid #1A1A1A;
+}
+.econ-card {
+    background-image: url("../img/econ/card-gradient.svg");
+}
+/* neuropsy.html Styling */
+.neuropsy-bg {
+    background-color: #2892D7;
+    color: #F3F9F0;
+}
+.neuropsy-color {
+    color: #F3F9F0;
+}
+.neuropsy-border:not(:last-child) {
+    border-right: 0.01rem solid #F3F9F0;
+}
+.neuropsy-card {
+    background-image: url("../img/neuropsy/card-gradient.svg");
+}
+.neuropsy-graphic {
+    width: 90%;
+}
+/* intrel.html Styling */
+.intrel-bg {
+    background-color: #F7F5FB;
+    color: #1A1A1A;
+}
+.intrel-color {
+    color: #1A1A1A;
+}
+.intrel-border:not(:last-child) {
+    border-right: 0.01rem solid #1A1A1A;
+}
+.intrel-card {
+    background-image: url("../img/intrel/card-gradient.svg");
+}
+.text-div-intrel {
+    padding-top: 2.5rem;
+}
+.intrel-description {
+    padding-top: 3rem;
+}
+/* Fullscreen Nav for Smaller Screens : index.html tech.html econ.html neuropsy.html intrel.html */
+@media (max-width: 991.98px) {
+    .navbar {
+        padding: 1rem 5rem;
+   }
+    .navbar .navbar-collapse {
+        background: rgba(0, 0, 0, 0.85);
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: opacity 0.35s ease;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center !important;
+        overflow-y: scroll;
+        overflow-x: hidden;
+   }
+    .navbar .navbar-collapse.collapse {
+        display: flex;
+        opacity: 0;
+        pointer-events: none;
+   }
+    .navbar .navbar-collapse.collapsing[style*="height"] {
+        opacity: 1;
+        height: 100vh !important;
+   }
+    .navbar .navbar-collapse.collapsing {
+        opacity: 0;
+        height: 100vh;
+   }
+    .navbar .navbar-collapse.collapse.show {
+        opacity: 1;
+        pointer-events: auto;
+   }
+    .navbar .navbar-collapse .navbar-nav {
+        margin-right: initial !important;
+        margin-top: auto;
+        margin-bottom: auto;
+   }
+    .navbar-nav {
+        margin-left: initial !important;
+   }
+    .nav-item {
+        border-right: none !important;
+        padding: 0.5rem 0rem;
+   }
+    .nav-link {
+        font-size: 2rem;
+   }
+   /* Change text color for links on fullscreen nav: econ.html */
+    .econ-color {
+        color: #F3F9F0;
+   }
+   /* Change text color for links on fullscreen nav: econ.html */
+    .intrel-color {
+        color: #F3F9F0;
+   }
+}
+/* Laptop */
+@media screen and (max-width: 992px) {
+   /* index.html */
+    .heading-size {
+        font-size: 4rem;
+   }
+    .social-link {
+        width: 4rem;
+   }
+   .social-link:hover {
+        width: 5rem;
+    }
+   /* tech.html econ.html neuropsy.html intrel.html */
+    .heading-size-alt {
+        font-size: 3rem;
+   }
+    .description {
+        margin: 1rem 0rem 0rem 0rem;
+   }
+    .subtopic-description {
+        font-size: 1rem;
+   }
+    .subtopic-heading {
+        font-size: 1rem;
+   }
+    .subtopic-icon {
+        width: 4rem;
+   }
+}
+/* Phones & Tablets */
+@media screen and (max-width: 800px) {
+   /* index.html*/
+    .grid-container {
+        grid-template-rows: 15% 55% 20% 10%;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "aside" "main" "footer";
+   }
+    .navbar {
+        padding: 2rem 3rem;
+   }
+    .heading-size {
+        font-size: 3rem;
+   }
+    .social-list {
+        width: 100vw;
+   }
+   /* tech.html econ.html neuropsy.html intrel.html */
+    .grid-container-alt {
+        grid-template-rows: 10% 45% 45%;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "main" "section";
+   }
+    .alt-main {
+        display: block;
+        padding-top: 2rem;
+   }
+    .heading-div {
+        width: 100%;
+        padding-top: 0rem;
+   }
+    .text-div {
+        width: 100%;
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        align-items: center;
+   }
+    .large-graphic {
+        display: none;
+   }
+    .description {
+        padding: 1rem 0rem 1rem 0rem;
+        font-size: 1.5rem;
+        line-height: 3rem;
+   }
+    .alt-section {
+        display: block;
+   }
+    .subtopic {
+        height: auto;
+        padding: 0.5rem 0rem 0.5rem 0rem;
+   }
+    .subtopic-description {
+        font-size: 1rem;
+   }
+    .subtopic-heading {
+        font-weight: 600;
+   }
+}
