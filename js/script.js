@@ -3,10 +3,10 @@ let iconButton = iconState.parentNode;
 let string = window.location.pathname.toString();
 let open = document.querySelector('.open-icon');
 
-if (string !== '/index.html') {
-  if (string === '/tech.html' || string === '/neuropsy.html') {
+if (string !== '/homepage-example/index.html') {
+  if (string === '/homepage-example/tech.html' || string === '/homepage-example/neuropsy.html') {
     open.style.backgroundImage = 'url(../img/tech/menu.svg)';
-  } else if (string === '/econ.html' || string === '/intrel.html') {
+  } else if (string === '/homepage-example/econ.html' || string === '/homepage-example/intrel.html') {
     open.style.backgroundImage = 'url(../img/econ/menu.svg)';
   }
 }
