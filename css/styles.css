@@ -46,6 +46,7 @@ body {
     background-position: bottom right;
 }
 .navbar {
+    height: 19dvh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -109,6 +110,7 @@ body {
 }
 .social-list {
     width: 20vw;
+    height: 9dvh;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -118,8 +120,8 @@ body {
     width: 3rem;
     height: auto;
 }
-.social-link:hover {
-    width: 4rem;
+img.social-link:hover {
+    transform: scale(1.25, 1.25);
 }
 .study-art {
     height: 100%;
@@ -350,12 +352,7 @@ body {
     .heading-size {
         font-size: 4rem;
    }
-    .social-link {
-        width: 4rem;
-   }
-   .social-link:hover {
-        width: 5rem;
-    }
+
    /* tech.html econ.html neuropsy.html intrel.html */
     .heading-size-alt {
         font-size: 3rem;
